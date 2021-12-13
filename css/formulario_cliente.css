@@ -1,0 +1,60 @@
+#formulario{
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px; 
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+
+#formulario .form_label{
+    display: block; 
+    font-size: 15px;
+}
+
+#formulario .asterisco{
+    color: red;
+}
+
+#formulario input{
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+#formulario .nombre{
+    position: relative;
+    left: 20px;
+}
+
+#formulario .apellido{
+    position: relative;
+    left: 16px;}
+
+#formulario .email{
+    position: relative;
+    left: 40px;}
+
+#formulario .telefono{
+    position: relative;
+    left: 18px;}
+
+#formulario .direccion{
+        position: relative;
+        left: 15px;}
+
+#formulario .no_tarjeta{
+            position: relative;
+            left: 5px;}
+
+#formulario .boton{
+        background: rgba(0, 0, 0, 0.2);
+        color: black;
+        padding: 10px 20px;
+        margin: auto;
+        border: none;
+        cursor: pointer;
+    
+}
+

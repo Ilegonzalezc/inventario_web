@@ -1,0 +1,37 @@
+#formulario{
+    width: 280px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px; 
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+
+#formulario .form_label{
+    display: block; 
+    font-size: 15px;
+}
+
+#formulario input{
+    padding: 8px;
+    margin-bottom: 20px;   
+}
+
+#formulario .boton{
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario .fecha{
+    width: 70px;
+}
+
+#formulario .asterisco{
+    color: red;
+}

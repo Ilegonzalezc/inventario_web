@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/5d1facf5a3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/fontello.css">
+    <link rel="stylesheet" href="../../css/banner.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/formulario_producto.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <title>Productos|Alta</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="contenedor">
+
+             <div class="encabezado">
+                <h1>Tú tienda de informática</h1>
+                <p>Inventario </p>
+                
+            </div>
+
+            <nav class="menu">
+                <a href="../../index.html"> Inicio</a>
+                <a href="../clientes/alta_cliente.html"> Alta clientes</a>
+                <a href="../clientes/listar_clientes.php"> Mostrar clientes</a>
+                <a href="../productos/alta_productos.html"> Alta productos</a>
+                <a href="../productos/listar_productos.php"> Mostrar productos</a>
+                <a href="../pedidos/alta_pedidos.php"> Alta pedidos</a>
+                <a href="../pedidos/listar_pedidos.php"> Mostrar pedidos</a>
+                <a href="../buscar/buscar.html">Buscar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <section id="form_alta_producto">
+
+                <h2 class="form_titulo">Ingrese un nuevo producto</h2>
+    
+                <form id="formulario" method="get" action="listar_alta_producto.php">
+    
+                    <label for="nombre" class="form_label">Nombre<span class="asterisco">*</span><input type="text" name="nombre" class="nombre" autofocus required>
+                    </label>
+    
+                    <label for="marca" class="form_label">Marca<input type="text" name="marca"class="marca">
+                    </label>
+    
+                    <label for="stock" class="form_label">Stock<span class="asterisco">*</span><input type="number" name="stock"class="stock" required>
+                    </label>
+    
+                    <input type="submit" class="boton" value="Enviar">
+                </form>
+            </section>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy"> Tu tienda de informática &copy; 2021</p>
+
+            <div class="sociales">
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-instagram" href="#"></a>
+                <a class="icon-googleplus" href="#"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    background:#1208a0f5 ;
+    color: white;
+   
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;   
+}
+
+.sociales a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,61 @@
+/*----- Importando fuente -----*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* ----- Estilo reset -----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html {
+        min-height: 100%;
+        position: relative; }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(245, 245, 245);
+    margin-bottom: 90px;
+}
+
+header{
+    height: 180px;   
+}
+
+header .encabezado{
+    height: 120px;
+    width: 98%;
+    background: #1208a0f5;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.encabezado p{
+    position: relative;
+    left: 20px;
+    top: 30px; 
+    font-size:20px;
+}
+
+
+h2{
+    text-align: center; 
+    margin: 10px;  
+}
+
+
+
+

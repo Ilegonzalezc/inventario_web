@@ -1,0 +1,23 @@
+table{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    border-collapse: collapse;   
+}
+
+th,td {
+    border: 2px solid gray;
+    padding: 1rem;
+}
+th{
+    background-color: rgba(245, 132, 132, 0.685);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
