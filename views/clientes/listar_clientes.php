@@ -77,7 +77,7 @@ echo "<tr>";
                .$fila['No_tarjeta']."</td><td>"
                ."<a href= eliminar_cliente.php?id_cliente=$fila[id_cliente]> X </a>".
                "</td><td>"
-               ."<a href='".$fila['id_cliente']."'> O "."</a>"."</td>";
+               ."<a href=actualizar_cliente.php?id_cliente=$fila[id_cliente]> O </a>"."</td>";
 echo "</tr>";
 }
 

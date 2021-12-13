@@ -84,7 +84,7 @@
                 </label>
 
                 <label for="cantidad" class="form_label">Cantidad
-                    <input type="number" name="cantidad" class="cantidad" required>
+                    <input type="number" name="cantidad" class="cantidad" min="1" required>
                 </label>
 
                 <input type="hidden" name="id_cliente" value="<?php echo $id_cliente ?>">

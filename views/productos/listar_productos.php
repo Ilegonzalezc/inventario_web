@@ -57,7 +57,9 @@ echo "<tr>";
     echo "<th> ID           </th>
           <th> Nombre       </th>
           <th> Marca        </th>
-          <th> Stock        </th>";
+          <th> Stock        </th>
+          <th> Eliminar     </th>
+          <th> Actualizar   </th>";
 echo "</tr>";
 
 while($fila = mysqli_fetch_array($consulta_select)){
@@ -66,7 +68,10 @@ echo "<tr>";
     echo "<td>".$fila['id_producto']."</td><td>"
                .$fila['Nombre']."</td><td>"
                .$fila['Marca']."</td><td>"
-               .$fila['Stock']."</td>";
+               .$fila['Stock']."</td><td>"
+               ."<a href= eliminar_producto.php?id_producto=$fila[id_producto]> X </a>".
+               "</td><td>"
+               ."<a href=actualizar_producto.php?id_producto=$fila[id_producto]> O </a>"."</td>";
 echo "</tr>";
 }
 
