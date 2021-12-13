@@ -49,7 +49,7 @@
 
     require "../../db/conexion_db.php";
     
-    $consulta_select = mysqli_query($conexion,"SELECT DISTINCT * FROM clientes");
+    $consulta_select = mysqli_query($conexion,"SELECT DISTINCT * FROM clientes2");
 
 echo "<table>";
  
@@ -60,7 +60,6 @@ echo "<tr>";
           <th> Email             </th>
           <th> Teléfono          </th>
           <th> Dirección         </th>
-          <th> Numero de tarjeta </th>
           <th> Eliminar          </th>
           <th> Actualizar        </th>";
 echo "</tr>";
@@ -74,7 +73,6 @@ echo "<tr>";
                .$fila['Email']."</td><td>"
                .$fila['Telefono']."</td><td>"
                .$fila['Direccion']."</td><td>"
-               .$fila['No_tarjeta']."</td><td>"
                ."<a href= eliminar_cliente.php?id_cliente=$fila[id_cliente]> X </a>".
                "</td><td>"
                ."<a href=actualizar_cliente.php?id_cliente=$fila[id_cliente]> O </a>"."</td>";
