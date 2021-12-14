@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/banner.css">
     <link rel="stylesheet" href="../../css/menu.css">
     <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="../../css/formulario_cliente.css">
     <link rel="stylesheet" href="../../css/footer.css">
 
     <title>Clientes|Actualizar</title>
@@ -21,11 +22,11 @@
 
 <?php
 
-$id_cliente = $_GET(id_cliente);
+$id = $_GET["id_cliente"];
 
 require "../../db/conexion_db.php";
 
-$consulta_select_actualizar = "SELECT * FROM clientes WHERE id_cliente = $id_cliente";
+$consulta_select_actualizar = "SELECT * FROM clientes WHERE id_cliente = $id";
 $consulta = mysqli_query($conexion, $consulta_select_actualizar);
 
 $fila = mysqli_fetch_array($consulta);
@@ -66,27 +67,27 @@ $fila = mysqli_fetch_array($consulta);
                 <form id="formulario" method="get" action="actualizar.php">
 
                     <label for="nombre" class="form_label">Nombre<span class="asterisco">*</span><input type="text"
-                            name="nombre" class="nombre" value="<?php echo $fila["Nombre"]?>" autofocus required>
+                            name="nombre" class="nombre" value="<?php echo $fila[1]?>" autofocus required>
                     </label>
 
                     <label for="apellidos" class="form_label">Apellidos<span class="asterisco">*</span><input
-                            type="text" name="apellidos" class="apellido" value="<?php echo $fila["Apellidos"] ?>" required>
+                            type="text" name="apellidos" class="apellido" value="<?php echo $fila[2] ?>" required>
                     </label>
 
                     <label for="email" class="form_label">Email<span class="asterisco">*</span><input type="email"
-                            name="email" class="email" value="<?php echo $fila["Email"] ?>" required>
+                            name="email" class="email" value="<?php echo $fila[5] ?>" required>
                     </label>
 
                     <label for="telefono" class="form_label">Teléfono<span class="asterisco">*</span><input type="tel"
-                            name="telefono" class="telefono" pattern="[0-9]{9}" title="introduce un número de teléfono de 9 digitos" value="<?php echo $fila["Telefono"] ?>" required>
+                            name="telefono" class="telefono" pattern="[0-9]{9}" title="introduce un número de teléfono de 9 digitos" value="<?php echo $fila[4] ?>" required>
                     </label>
 
                     <label for="dirección" class="form_label">Dirección<span class="asterisco">*</span><input
-                            type="text" name="direccion" class="direccion" <?php echo $fila["Direccion"] ?>value="" required>
+                            type="text" name="direccion" class="direccion" <?php echo $fila[3] ?>value="" required>
                     </label>
 
                     <label for="no_tarjeta" class="form_label">No. Tarjeta<span class="asterisco">*</span><input
-                            type="text" name="no_tarjeta" class="no_tarjeta" pattern="[0-9]{16}" title="introduce un número de 16 digitos" value="<?php echo $fila["No_tarjeta"] ?>"
+                            type="text" name="no_tarjeta" class="no_tarjeta" pattern="[0-9]{16}" title="introduce un número de 16 digitos" value="<?php echo $fila[6] ?>"
                             required>
                     </label>
 

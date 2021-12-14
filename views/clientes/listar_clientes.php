@@ -67,12 +67,12 @@ echo "</tr>";
 while($fila = mysqli_fetch_array($consulta_select)){
 
 echo "<tr>";
-    echo "<td>".$fila['id_cliente']."</td><td>"
-               .$fila['Nombre']."</td><td>"
-               .$fila['Apellidos']."</td><td>"
-               .$fila['Email']."</td><td>"
-               .$fila['Telefono']."</td><td>"
-               .$fila['Direccion']."</td><td>"
+    echo "<td>".$fila[0]."</td><td>"
+               .$fila[1]."</td><td>"
+               .$fila[2]."</td><td>"
+               .$fila[5]."</td><td>"
+               .$fila[4]."</td><td>"
+               .$fila[3]."</td><td>"
                ."<a href= eliminar_cliente.php?id_cliente=$fila[id_cliente]> X </a>".
                "</td><td>"
                ."<a href=actualizar_cliente.php?id_cliente=$fila[id_cliente]> O </a>"."</td>";
